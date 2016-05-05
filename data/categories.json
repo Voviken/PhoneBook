@@ -1,1 +1,24 @@
 {"name": "Mobile", "type": "phoneType", "category_id": "1"}
+{"name": "Work", "type": "phoneType", "category_id": "2"}
+{"name": "Home", "type": "phoneType", "category_id": "3"}
+{"name": "Fax", "type": "phoneType", "category_id": "4"}
+{"name": "Special", "type": "phoneType", "category_id": "5"}
+
+{"name": "GoogleTalk", "type": "chatType", "category_id": "6"}
+{"name": "Skype", "type": "chatType", "category_id": "7"}
+{"name": "Yahoo", "type": "chatType", "category_id": "8"}
+{"name": "ICQ", "type": "chatType", "category_id": "9"}
+
+{"name": "Mobile", "type": "emailType", "category_id": "10"}
+{"name": "Work", "type": "emailType", "category_id": "11"}
+{"name": "Home", "type": "emailType", "category_id": "12"}
+{"name": "Special", "type": "emailType", "category_id": "13"}
+
+{"name": "Work", "type": "addressType", "category_id": "14"}
+{"name": "Home", "type": "addressType", "category_id": "15"}
+{"name": "Special", "type": "addressType", "category_id": "16"}
+{"name": "Other", "type": "addressType", "category_id": "17"}
+
+{"name": "Work", "type": "OrganizationType", "category_id": "18"}
+{"name": "Special", "type": "OrganizationType", "category_id": "19"}
+{"name": "Other", "type": "OrganizationType", "category_id": "20"}
