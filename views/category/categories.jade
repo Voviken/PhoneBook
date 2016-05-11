@@ -1,0 +1,25 @@
+extends ../layout
+
+block content
+    h1.page-header Categories
+    ol.breadcrumb
+        li
+            a(href="/") Home
+        li.active Categories
+    table.table.table-bordered.table-hover.table-condensed
+        tr
+            th #
+            th NAME
+            th TYPE
+            th(style = "width: 100px").text-center ACTIONS
+        each val in categories
+            tr
+                td #{val.category_id}
+                td #{val.name}
+                td #{val.type}
+                td.text-center
+                    a(href="/phonebook/editcateg/#{val.category_id}")
+                        i.glyphicon.glyphicon-edit
+                    &nbsp;&nbsp;&nbsp;
+                    a(href="#")
+                        i.glyphicon.glyphicon-trash

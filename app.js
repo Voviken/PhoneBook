@@ -5,13 +5,13 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var MongoClient = require('mongodb').MongoClient;
+var Client = require('node-rest-client').Client;
 
 var index = require('./routes/index');
 var pb_api = require('./routes/pb_api');
 var phonebook = require('./routes/phonebook');
 
 var app = express();
-
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -34,6 +34,11 @@ app.use(function(req, res, next) {
         req["db"] = db; // req.db = db;
         next();
     });
+});
+
+app.use(function(req, res, next) {
+    req["client"] = new Client();
+    next();
 });
 
 app.use('/', index);
